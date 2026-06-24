@@ -1,19 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
-import { Map as MapIcon, Wheat, Droplets, Thermometer, CloudRain, ShieldCheck } from 'lucide-react';
+import { Map as MapIcon, Wheat, Droplets, Thermometer, CloudRain } from 'lucide-react';
 import { type Talhao } from '../types/agro'; 
-
-  // Definição da estrutura dos dados reais de performance
-  interface PerformanceSafra {
-  id: number;
-  cultura: string;
-  variedade: string;
-  talhaoNome: string;
-  estimado: number;
-  real: number;
-  variacao: number;
-}
 
 // Interface para tipar os dados que vêm do Back-end
 interface DashboardData {
